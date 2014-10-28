@@ -1,0 +1,6 @@
+P:\1dv402\1dv402-js223mx-2-3-geometriska-figurer\2-3-geometriska-figurer\bin\Debug\2-3-geometriska-figurer.exe.config
+P:\1dv402\1dv402-js223mx-2-3-geometriska-figurer\2-3-geometriska-figurer\obj\Debug\2-3-geometriska-figurer.csprojResolveAssemblyReference.cache
+P:\1dv402\1dv402-js223mx-2-3-geometriska-figurer\2-3-geometriska-figurer\bin\Debug\2-3-geometriska-figurer.exe
+P:\1dv402\1dv402-js223mx-2-3-geometriska-figurer\2-3-geometriska-figurer\bin\Debug\2-3-geometriska-figurer.pdb
+P:\1dv402\1dv402-js223mx-2-3-geometriska-figurer\2-3-geometriska-figurer\obj\Debug\2-3-geometriska-figurer.exe
+P:\1dv402\1dv402-js223mx-2-3-geometriska-figurer\2-3-geometriska-figurer\obj\Debug\2-3-geometriska-figurer.pdb
