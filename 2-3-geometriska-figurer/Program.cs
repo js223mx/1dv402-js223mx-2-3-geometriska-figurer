@@ -35,14 +35,14 @@ namespace _2_3_geometriska_figurer
                 }
 
                 Console.BackgroundColor = ConsoleColor.Blue;
-                Console.WriteLine("tryck en tagent för att fortsätta, esc avslutar");
+                Console.WriteLine("\nTryck en tagent för att fortsätta, esc avslutar\n");
                 Console.ResetColor();
             } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
         private static Shape CreateShape(ShapeType shapetype)
         {
             Console.BackgroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("==========================================");
+            Console.WriteLine("\n==========================================");
             switch(shapetype)
             {
                 case ShapeType.Ellipse:
@@ -53,11 +53,12 @@ namespace _2_3_geometriska_figurer
                     Console.WriteLine("=                Rektangel               =");
                     break;
             }
-            Console.WriteLine("==========================================");
+            Console.WriteLine("==========================================\n");
             Console.ResetColor();
 
             double length = ReadDoubleGreaterThanZero("Ange längden: ");
             double width = ReadDoubleGreaterThanZero("Ange Bredden: ");
+            Console.WriteLine();
 
             if(shapetype == ShapeType.Ellipse)
             {
@@ -68,15 +69,17 @@ namespace _2_3_geometriska_figurer
                 return new Rectangle(length, width);
             }
         }
+
+        //metod som retunerar ett flyttal större än 0
         private static double ReadDoubleGreaterThanZero(string prompt)
         {   
             while(true)
             {
                 Console.Write(prompt);
-                double something = double.Parse(Console.ReadLine());
-                if (something > 0) 
+                double floatnumber = double.Parse(Console.ReadLine());
+                if (floatnumber > 0) 
                 {
-                    return something;
+                    return floatnumber;
                 }
                 else 
                 {
@@ -97,10 +100,11 @@ namespace _2_3_geometriska_figurer
             Console.WriteLine("=                                        =");
             Console.WriteLine("==========================================");
             Console.ResetColor();
-            Console.WriteLine("0. Avsluta.");
-            Console.WriteLine("1. Ellips.");
-            Console.WriteLine("2. Rektangel.");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("\n0. Avsluta.");
+            Console.WriteLine("\n1. Ellips.");
+            Console.WriteLine("\n2. Rektangel.");
+            Console.WriteLine("\n==========================================\n");
+            Console.WriteLine("Ange menyval [0-2]: ");
             Console.WriteLine();
 
             
@@ -110,7 +114,7 @@ namespace _2_3_geometriska_figurer
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("==========================================");
             Console.WriteLine("=            Detaljer                    =");
-            Console.WriteLine("==========================================");
+            Console.WriteLine("==========================================\n");
             Console.ResetColor();
             Console.WriteLine(shape.ToString());
             Console.WriteLine("==========================================");
