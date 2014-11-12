@@ -15,13 +15,13 @@ namespace _2_3_geometriska_figurer
         private double _width;
 
 
-        //egenskap
+        //egenskap som representerar en figurs area
         public abstract double Area 
         {
             get;
         }
 
-        //egenskap
+        //egenskap som kapslar in _length
         public double Length 
         {
             get{return _length; }
@@ -35,13 +35,13 @@ namespace _2_3_geometriska_figurer
             }
         }
 
-        //egenskap
+        //egenskap som representerar en figurs omkrets
         public abstract double Perimeter
         {
             get;
         }
 
-        //egenskap
+        //egenskap kapslar in _width
         public double Width 
         {
             get{return _width; }
@@ -58,7 +58,7 @@ namespace _2_3_geometriska_figurer
         //metod
         public override string ToString()
         {
-            return string.Format("Längd   : {0} \nBredd   : {1} \nOmkrets : {2:f1} \nArea    : {3:f1} \n", Length, Width, Perimeter, Area);
+            return string.Format("Längd   : {0} \nBredd   : {1} \nOmkrets : {2:f1} \nArea    s: {3:f1} \n", Length, Width, Perimeter, Area); //Platshållare och f1 är float som skriver ut decimaler \n separerar raderna
         }
 
         //metod
