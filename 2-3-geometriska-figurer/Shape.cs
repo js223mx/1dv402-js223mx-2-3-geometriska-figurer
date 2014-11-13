@@ -58,14 +58,14 @@ namespace _2_3_geometriska_figurer
         //metod
         public override string ToString()
         {
-            return string.Format("Längd   : {0} \nBredd   : {1} \nOmkrets : {2:f1} \nArea    s: {3:f1} \n", Length, Width, Perimeter, Area); //Platshållare och f1 är float som skriver ut decimaler \n separerar raderna
+            return string.Format("Längd   : {0} \nBredd   : {1} \nOmkrets : {2:f1} \nArea    : {3:f1} \n", Length, Width, Perimeter, Area); //Platshållare och f1 är float som skriver ut decimaler \n separerar raderna
         }
 
         //metod
-        protected Shape(double _length, double _width)
+        protected Shape(double length, double width)
         {
-            Length = _length;
-            Width = _width;
+            Length = length;
+            Width = width;
         }
         
     }
